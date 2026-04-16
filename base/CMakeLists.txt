@@ -21,7 +21,7 @@ foreach(source IN LISTS sources)
     # 生成唯一目标名（避免路径冲突）
     string(REPLACE "/" "_" target_name ${exe_name})
     # 添加可执行目标
-    add_executable(${target_name} ${source} 01_HelloWord.cpp 02_Identifier.cpp 03_DataType.cpp 04_ConstAndVar.cpp 05_Define.cpp 06_CharAndString.cpp 07_ChangeChar.cpp 08_ChangeDataType.cpp 09_Input.cpp 10_MacroDefinition.cpp)
+    add_executable(${target_name} ${source} 01_HelloWord.cpp 02_Identifier.cpp 03_DataType.cpp 04_ConstAndVar.cpp 05_Define.cpp 06_CharAndString.cpp 07_ChangeChar.cpp 08_ChangeDataType.cpp 09_Input.cpp 10_MacroDefinition.cpp 11_NameSpace.cpp 12_Operater.cpp)
     # 输出提示信息
     message("-- Building ${source} -> ${OUTPUT_DIR}/runtime/${target_name}")
 endforeach()
