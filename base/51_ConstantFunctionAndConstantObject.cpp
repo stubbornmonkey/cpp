@@ -1,14 +1,16 @@
 //
 // Created by 倔强的猴子 on 2026/4/25.
 //
+/*
 #include <iostream>
 using namespace std;
 
 class Person {
-private:
-    string name;
-    int age;
 public:
+    string name;
+    // describe attribute
+    // mutable attribute can modify by constant function and constant object
+    mutable int age;
 
     Person(string name,int age):name(name),age(age) {}
 
@@ -25,9 +27,27 @@ public:
     }
 };
 int main() {
-    Person p ("xiaoming",10);
+//    Person p ("xiaoming",10);
+//
+//    p.fixPerson("小明",20);
+//    p.show();
 
-    p.fixPerson("小明",20);
-    p.show();
+    // define a constant object
+    // cant modify constant object attribute
+    // constant object only call constant function
+    // only read constant object attribute
+    const Person xiaobai("xiaobai",18);
+
+    //xiaobai.age = 20;
+    // exception
+    //xiaobai.name = "1";
+
+    //xiaobai.fixPerson("nihao",20);
+    //xiaobai.show();
+
+    cout << xiaobai.name << endl;
+
     return 0;
 }
+ */
+
